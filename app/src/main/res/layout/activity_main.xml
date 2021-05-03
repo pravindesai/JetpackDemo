@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<Button
+    android:id="@+id/navigationBtn"
+    android:text="Navigation Component"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="openNavigationDemo"/>
+
+    <Button
+        android:id="@+id/dataBindingBtn"
+        android:text="Data Binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openDataBindingDemo"/>
+
+    <Button
+        android:id="@+id/listDataBindingBtn"
+        android:text="ListView with data binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openListDataBinding"/>
+
+    <Button
+        android:id="@+id/DataBinding_Navigation"
+        android:text="Data Binding + Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openDB_Nav"/>
+
+    <Button
+        android:id="@+id/ViewModelExample"
+        android:text="View Model Example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="VMActDemo"/>
+
+    <Button
+        android:id="@+id/VM_and_Room"
+        android:text="View Model and Room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="VM_and_Room"/>
+
+    <Button
+        android:id="@+id/MVVM_API"
+        android:text="MVVM and API"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="MVVM_API"/>
+
+    <Button
+        android:id="@+id/Retrofit_api"
+        android:text="Retrofit with Repository"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="open_retrofit"/>
+
+    <Button
+        android:id="@+id/Paggig_btn"
+        android:text="Paging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="open_Paging"/>
+
+    <Button
+        android:id="@+id/WorkManger_btn"
+        android:text="Work Manager demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="open_workManager"/>
+
+</LinearLayout>

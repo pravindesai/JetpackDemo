@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation2"
+    app:startDestination="@id/inputDataFrag">
+
+    <fragment
+        android:id="@+id/inputDataFrag"
+        android:name="com.example.jetpackdemo.databinding_Nav.inputDataFrag"
+        android:label="fragment_input_data"
+        tools:layout="@layout/fragment_input_data" >
+        <action
+            android:id="@+id/action_inputDataFrag_to_displayDataFrag"
+            app:destination="@id/displayDataFrag" />
+        <argument
+            android:name="data"
+            app:argType="com.example.jetpackdemo.databinding_Nav.Data" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayDataFrag"
+        android:name="com.example.jetpackdemo.databinding_Nav.displayDataFrag"
+        android:label="fragment_display_data"
+        tools:layout="@layout/fragment_display_data" >
+        <argument
+            android:name="data"
+            app:argType="com.example.jetpackdemo.databinding_Nav.Data" />
+    </fragment>
+</navigation>
