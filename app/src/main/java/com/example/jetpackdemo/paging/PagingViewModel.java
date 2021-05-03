@@ -30,6 +30,7 @@ public class PagingViewModel extends ViewModel {
     private LiveData<PagedList<PhotosResClassItem>> pagedListLiveData;
 
     public PagingViewModel(){
+
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())

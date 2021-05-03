@@ -18,12 +18,9 @@ import retrofit2.Response;
 public class PhotosDataSource extends PageKeyedDataSource<Void,PhotosResClassItem> {
     PhotosServiceInt photosServiceInt;
     private static final String TAG = "PhotosDataSource";
-    MutableLiveData<PhotosResClass> photosResClassMutableLiveData;
 
     public PhotosDataSource(PhotosServiceInt photosServiceInt) {
         this.photosServiceInt = photosServiceInt;
-        photosResClassMutableLiveData = new MutableLiveData<>();
-
     }
 
     @Override
@@ -35,7 +32,6 @@ public class PhotosDataSource extends PageKeyedDataSource<Void,PhotosResClassIte
             public void onResponse(Call<PhotosResClass> call, Response<PhotosResClass> response) {
                 PhotosResClass res = response.body();
                 if (response.isSuccessful()){
-                    photosResClassMutableLiveData.setValue(res);
 
                     for (PhotosResClassItem item:res) {
                         Log.i(TAG, "onResponse: *"+item.getId() );
@@ -63,7 +59,4 @@ public class PhotosDataSource extends PageKeyedDataSource<Void,PhotosResClassIte
 
     }
 
-    public MutableLiveData<PhotosResClass> getPhotosResClassMutableLiveData() {
-        return photosResClassMutableLiveData;
-    }
 }

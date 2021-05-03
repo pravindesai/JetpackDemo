@@ -12,7 +12,7 @@ public class PhotosFactory extends DataSource.Factory{
     PhotosServiceInt photosServiceInt;
 
     public PhotosFactory(PhotosServiceInt serviceInt) {
-        dataSourceMutableLiveData = new MutableLiveData<>();
+        this.dataSourceMutableLiveData = new MutableLiveData<>();
         photosServiceInt = serviceInt;
     }
 
@@ -21,7 +21,7 @@ public class PhotosFactory extends DataSource.Factory{
     public DataSource create() {
         photosDataSource = new PhotosDataSource(photosServiceInt);
         dataSourceMutableLiveData.postValue(photosDataSource);
-        return null;
+        return photosDataSource;
     }
 
     public MutableLiveData<PhotosDataSource> getDataSourceMutableLiveData() {

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.jetpackdemo.AndroidSqliteDb.SqliteActivity;
 import com.example.jetpackdemo.paging.Paging_Activity;
 import com.example.jetpackdemo.retorfit_demo.Retrofit_Activity;
 import com.example.jetpackdemo.mvvm_api.Mvvm_api;
@@ -64,5 +65,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void open_workManager(View view) {
         startActivity(new Intent(this, workmanagerActivity.class));
+    }
+
+    public void open_sqliteActivty(View view) {
+        startActivity(new Intent(this, SqliteActivity.class));
     }
 }

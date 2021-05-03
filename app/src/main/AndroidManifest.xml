@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JetpackDemo">
-        <activity android:name=".workManager.workmanagerActivity"></activity>
+        <activity android:name=".AndroidSqliteDb.SqliteActivity"></activity>
+        <activity android:name=".workManager.workmanagerActivity" />
         <activity android:name=".paging.Paging_Activity" />
         <activity android:name=".retorfit_demo.Retrofit_Activity" />
         <activity android:name=".mvvm_api.Mvvm_api" />
