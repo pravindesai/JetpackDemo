@@ -84,4 +84,11 @@
         android:layout_height="wrap_content"
         android:onClick="open_sqliteActivty"/>
 
+    <Button
+        android:id="@+id/lifecycle_Aware_btn"
+        android:text="Life Cycle Aware Component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="open_lifeCycleAwareActivity"/>
+
 </LinearLayout>
